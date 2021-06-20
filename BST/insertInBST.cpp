@@ -6,8 +6,9 @@ struct node {
     node* left;
     node* right;
 
+
     node(int val) {
-        int data = val;
+        data = val;
         left = NULL;
         right = NULL;
     }
@@ -41,7 +42,7 @@ int main() {
     insertBST(root, 3);
     insertBST(root, 4);
     insertBST(root, 2);
-    insertBST(root, 7);
+    insertBST(root, 6);
 
     inOrderPrint(root);
 
