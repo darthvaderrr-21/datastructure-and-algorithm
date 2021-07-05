@@ -5,7 +5,7 @@ using namespace std;
 
 const int N = 1e5+6;
 vector<bool> vis(N);
-vector<vector<int>> adj(N);
+vector<vector<int>> adj;
 vector<int> parent(N);
 vector<int> sz(N);
 
@@ -50,10 +50,6 @@ int main() {
         int x, y;
         cin>>x>>y;
         adj.push_back({x, y});
-    }
-
-    for(auto i: adj) {
-        cout<<i[0]<<i[1]<<endl;
     }
 
     bool cycle = false;
