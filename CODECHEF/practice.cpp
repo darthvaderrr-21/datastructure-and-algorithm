@@ -50,6 +50,11 @@ int main() {
         //         count1 +=  arr[i]/minVal;
         //     }
         // }
+            arr[maxIdx] = minVal;
+
+            for(int i=0; i<N; i++) {
+                count1 +=  arr[i]/minVal;
+            }       
 
         if(minIdxNum == 1) {
             bool flag = true;

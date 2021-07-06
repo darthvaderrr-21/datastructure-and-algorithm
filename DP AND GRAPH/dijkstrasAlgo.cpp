@@ -48,7 +48,7 @@ int main() {
         if(dist[i] == inf) {
             cout<<"-1"<<endl;
         } else {
-            cout<<dist[i];
+            cout<<dist[i]<<" ";
         }
     }
     

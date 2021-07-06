@@ -1,0 +1,1 @@
+{"name":"Local: dijkstrasAlgo","url":"c:\\Users\\rahul\\Desktop\\DS n' Algo\\DP AND GRAPH\\dijkstrasAlgo.cpp","tests":[{"id":1625552153418,"input":"4 4\n1 2 24\n1 4 20\n3 1 3\n4 3 12\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\rahul\\Desktop\\DS n' Algo\\DP AND GRAPH\\dijkstrasAlgo.cpp","group":"local","local":true}
