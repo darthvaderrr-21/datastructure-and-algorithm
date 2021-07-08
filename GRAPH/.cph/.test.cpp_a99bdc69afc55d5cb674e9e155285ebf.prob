@@ -1,1 +1,0 @@
-{"name":"Local: test","url":"c:\\Users\\rahul\\Desktop\\DS n' Algo\\DP AND GRAPH\\test.cpp","tests":[{"id":1625054726452,"input":"5 5 3 5\n1 2\n1 3\n2 4\n1 4\n2 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\rahul\\Desktop\\DS n' Algo\\DP AND GRAPH\\test.cpp","group":"local","local":true}
