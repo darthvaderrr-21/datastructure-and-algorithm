@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+const int N = 1e3;
+int dp[N][N];
+
 int minDistBFS(vector<int> adj[], int u, int v, int n) {
     vector<bool> visited(n, 0);
     vector<int> distance(n, 0);
@@ -27,6 +30,9 @@ int minDistBFS(vector<int> adj[], int u, int v, int n) {
 }
 
 int main() {
+    for(int i=0; i<N; i++) {
+        dp[i] = -1;
+    }
     int T;
     cin>>T;
     for(int i=0; i<T; i++) {
@@ -55,18 +61,18 @@ int main() {
             for(int i=0; i<k-1; i++) {
                 for(int j=i+1; j<k; j++) {
                     collec.push_back({arr[i], arr[j]});
-                    // int dist = minDistBFS(adj, arr[i], arr[j], N);
-                    //     if(dist == d) {
-                    //         count +=1;
-                    //     }
+                    int dist = minDistBFS(adj, arr[i], arr[j], N);
+                        if(dist == d) {
+                            count +=1;
+                        }
                 }
             }
-            for(auto it: collec) {
-                int dist = minDistBFS(adj, it[0], it[1], N);
-                if(dist == d) {
-                    count +=1;
-                }
-            }
+            // for(auto it: collec) {
+            //     int dist = minDistBFS(adj, it[0], it[1], N);
+            //     if(dist == d) {
+            //         count +=1;
+            //     }
+            // }
             
             cout<<count<<endl;
         }

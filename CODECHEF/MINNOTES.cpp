@@ -83,7 +83,7 @@ int main()
             }
         }
         if(count2) {
-            cout<<min(count1, count2)<<endl;
+            cout<<count2<<endl;
         } else {
             cout << count1 << endl;
         }
@@ -114,11 +114,10 @@ int main()
                 }
             }
             // cout<<numb<<notDiviIdx<<minVal;
-
             for (int i = 0; i < N; i++) {
                 count1 += arr[i] / minVal;
             }
-            cout<<count1;
+            cout<<count1<<endl;
         }
 
 
