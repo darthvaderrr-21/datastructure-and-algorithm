@@ -6,7 +6,7 @@ using namespace std;
 bool isCycle(int src, vector<vector<int>> &adj, vector<bool> &vis, int parent) {
     vis[src] = true;
     for(auto it: adj[src]) {
-        if(src != parent) {
+        if(it != parent) {
             if(vis[it]) {
                 return true;
             } else {

@@ -16,6 +16,7 @@ bool isCycle(int src,  vector<vector<int>> &adj, vector<bool> &vis, vector<bool>
             }
         }
     }
+    streak[src] = false;
     return false;
 }
 
