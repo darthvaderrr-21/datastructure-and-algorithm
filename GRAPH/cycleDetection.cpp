@@ -9,19 +9,18 @@ bool isCycle(int src, vector<vector<int>> &adj, vector<bool> &vis, int parent) {
         if(it != parent) {
             if(vis[it]) {
                 return true;
-            } else {
-                if(!vis[it] && isCycle(it, adj, vis, src)){
-                    return true;
-                }
+            }
+            if(!vis[it] && isCycle(it, adj, vis, src)){
+                return true;
             }
         }
     }
-
+    
     return false;
 }
 
 int main() {
-    int n, m;
+    int n, m;   
     cin>>n>>m;
 
     vector<bool> vis(n,0);
